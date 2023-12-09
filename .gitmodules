@@ -1,0 +1,6 @@
+[submodule "qyyta-frontend"]
+	path = qyyta-frontend
+	url = https://github.com/naoto-ysd/qyyta-frontend
+[submodule "qyyta-backend"]
+	path = qyyta-backend
+	url = https://github.com/naoto-ysd/qyyta-backend
