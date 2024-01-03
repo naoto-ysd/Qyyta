@@ -3,7 +3,7 @@ services:
   db:
     image: mysql:8.0
     ports:
-      - "3307:3306"
+      - "3307:3307"
     command: --default-authentication-plugin=mysql_native_password
     volumes:
       - mysql-data:/var/lib/mysql
@@ -18,7 +18,7 @@ services:
     volumes:
       - ./qyyta-backend:/myapp
     ports:
-      - "3001:3000"
+      - "3001:3001"
     depends_on:
       - db
   frontend:
@@ -27,7 +27,7 @@ services:
       - ./qyyta-frontend:/app
       - /app/node_modules
     ports:
-      - "3002:3000"
+      - "3000:3000"
     stdin_open: true
     tty: true
     depends_on:
